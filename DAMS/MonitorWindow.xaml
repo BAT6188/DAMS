@@ -1,0 +1,80 @@
+﻿<Window x:Class="DAMS.MonitorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MonitorWindow" Icon="Resources/DAMS.ico"
+        Height="900" Width="1440" WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" Background="#01FFFFFF" ShowInTaskbar="False" >
+    <Grid x:Name="Grid_Container">
+        <!--Rectangle Fill="#7FAFAFB6" HorizontalAlignment="Left" Height="900" VerticalAlignment="Top" Width="1440" RadiusX="0" RadiusY="0"/-->
+        <Rectangle Fill="#00000000" HorizontalAlignment="Left" Height="900" VerticalAlignment="Top" Width="1440" RadiusX="0" RadiusY="0"/>
+        <Canvas HorizontalAlignment="Left" Height="900" VerticalAlignment="Top" Width="1440">
+            <Rectangle Fill="#01FFFFFF" HorizontalAlignment="Left" Height="68" Margin="16,10,0,0" RadiusY="5" RadiusX="5" VerticalAlignment="Top" Width="68" MouseDown="DoExit" Visibility="Hidden"  />
+            <Button x:Name="systemConfig" Content="" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left"  Canvas.Left="1350" Canvas.Top="6" VerticalAlignment="Top" 
+                    Width="70" Height="70" Click="system_config_Click" >
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/u99.png"/>
+                </Button.Background>
+            </Button>
+
+            <Canvas HorizontalAlignment="Left" Height="727" VerticalAlignment="Top" Width="1420" Background="#11232719" Canvas.Top="95" Canvas.Left="10">
+                <Grid x:Name="MonitorGrid" Canvas.Top="2" Canvas.Left="2"  Width="1406" Height="718" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3"/>
+                        <ColumnDefinition Width="280"/>
+                        <ColumnDefinition Width="280"/>
+                        <ColumnDefinition Width="280"/>
+                        <ColumnDefinition Width="280"/>
+                        <ColumnDefinition Width="280"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="144"/>
+                        <RowDefinition Height="144"/>
+                        <RowDefinition Height="144"/>
+                        <RowDefinition Height="144"/>
+                        <RowDefinition Height="144"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                   <!-- 
+                    <Rectangle x:Name="bkRec01" Grid.Row="1" Grid.Column="1" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec02" Grid.Row="1" Grid.Column="2" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec03" Grid.Row="1" Grid.Column="3" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec04" Grid.Row="1" Grid.Column="4" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec05" Grid.Row="1" Grid.Column="5" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+
+                    <Rectangle x:Name="bkRec06" Grid.Row="2" Grid.Column="1" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec07" Grid.Row="2" Grid.Column="2" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec08" Grid.Row="2" Grid.Column="3" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec09" Grid.Row="2" Grid.Column="4" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec10" Grid.Row="2" Grid.Column="5" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+
+                    <Rectangle x:Name="bkRec11" Grid.Row="3" Grid.Column="1" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec12" Grid.Row="3" Grid.Column="2" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec13" Grid.Row="3" Grid.Column="3" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec14" Grid.Row="3" Grid.Column="4" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec15" Grid.Row="3" Grid.Column="5" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+
+                    <Rectangle x:Name="bkRec16" Grid.Row="4" Grid.Column="1" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec17" Grid.Row="4" Grid.Column="2" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec18" Grid.Row="4" Grid.Column="3" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec19" Grid.Row="4" Grid.Column="4" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec20" Grid.Row="4" Grid.Column="5" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+
+                    <Rectangle x:Name="bkRec21" Grid.Row="5" Grid.Column="1" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec22" Grid.Row="5" Grid.Column="2" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec23" Grid.Row="5" Grid.Column="3" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec24" Grid.Row="5" Grid.Column="4" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    <Rectangle x:Name="bkRec25" Grid.Row="5" Grid.Column="5" Fill="#7FAFAFB6" HorizontalAlignment="Left" Width="280" Height="144" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Stroke="#FFD37373"/>
+                    -->
+                </Grid>
+            </Canvas>
+        </Canvas>
+        <!--
+        <Button x:Name="Button_test" HorizontalAlignment="Left" Height="36" Margin="622,27,0,0" VerticalAlignment="Top" Width="103" Content="弹出激活按钮" Click="Button_test_Click"/>
+        <Button x:Name="Button_test1" HorizontalAlignment="Left" Height="36" Margin="730,27,0,0" VerticalAlignment="Top" Width="103" Content="开始采集" Click="Button_test1_Click"/>
+        <Button x:Name="Button_test2" HorizontalAlignment="Left" Height="36" Margin="838,27,0,0" VerticalAlignment="Top" Width="103" Content="采集中" Click="Button_test2_Click"/>
+        <Button x:Name="Button_test3" HorizontalAlignment="Left" Height="36" Margin="946,27,0,0" VerticalAlignment="Top" Width="103" Content="采集完了" Click="Button_test3_Click"/>
+        <Button x:Name="Button_test4" HorizontalAlignment="Left" Height="36" Margin="1054,27,0,0" VerticalAlignment="Top" Width="103" Content="空闲中" Click="Button_test4_Click"/>
+-->
+    </Grid>
+</Window>

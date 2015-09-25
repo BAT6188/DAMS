@@ -1,0 +1,124 @@
+﻿<Window x:Class="DAMS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Icon="Resources/DAMS.ico" Height="900" Width="1440" WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" ShowInTaskbar="True">
+    <Window.Resources>
+    </Window.Resources>
+    <Grid Loaded="OnLoaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="2"/>
+
+            <RowDefinition Height="721*"/>
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="{DynamicResource ISBackground}" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Canvas x:Name="cavHeader" HorizontalAlignment="Left" Margin="0,82,0,1" Width="1440" RenderTransformOrigin="0.5,0.5" >
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="-90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF34FBE0"/>
+                    <GradientStop Color="#FF0D4FDC" Offset="1"/>
+                    <GradientStop Color="#FF1018CD" Offset="1"/>
+                    <GradientStop Color="#FF295F78" Offset="1"/>
+                    <GradientStop Color="#FF264F4A" Offset="1"/>
+                    <GradientStop Color="#FF242B34" Offset="1"/>
+                    <GradientStop Color="#FF2F4AC2" Offset="0.547"/>
+                    <GradientStop Color="#FF32D6CF" Offset="0.172"/>
+                    <GradientStop Color="#FF160DDC" Offset="1"/>
+                    <GradientStop Color="#FF309FC9" Offset="0.319"/>
+                    <GradientStop Color="#FF2F5EC3" Offset="0.487"/>
+                    <GradientStop Color="#FF1921D2" Offset="0.832"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+        </Canvas>
+
+        <Canvas x:Name="cavFooter" HorizontalAlignment="Left" Margin="0,0,0,0" Width="1440"  Grid.Row="3" RenderTransformOrigin="0.5,0.5" >
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="-90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF34FBE0"/>
+                    <GradientStop Color="#FF0D4FDC" Offset="1"/>
+                    <GradientStop Color="#FF1018CD" Offset="1"/>
+                    <GradientStop Color="#FF295F78" Offset="1"/>
+                    <GradientStop Color="#FF264F4A" Offset="1"/>
+                    <GradientStop Color="#FF242B34" Offset="1"/>
+                    <GradientStop Color="#FF2F4AC2" Offset="0.547"/>
+                    <GradientStop Color="#FF32D6CF" Offset="0.172"/>
+                    <GradientStop Color="#FF160DDC" Offset="1"/>
+                    <GradientStop Color="#FF309FC9" Offset="0.319"/>
+                    <GradientStop Color="#FF2F5EC3" Offset="0.487"/>
+                    <GradientStop Color="#FF1921D2" Offset="0.832"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+        </Canvas>
+        <Image HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="50" Source="Resources/u1.png" Margin="24,19,0,0"/>
+        <Label x:Name="lblAppName" Content="智敏执法记录仪数据采集系统" HorizontalAlignment="Left" Height="54" Margin="96,0,0,12"
+                              VerticalAlignment="Bottom" Width="428" VerticalContentAlignment="Center" FontSize="26" Background="{x:Null}">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0,0.2" StartPoint="1,1">
+
+                    <GradientStop Color="#FFEBF331" Offset="0.0"/>
+                    <GradientStop Color="#FFF59C4C" Offset="0.2"/>
+                    <GradientStop Color="#FFF1F109" Offset="0.4"/>
+                    <GradientStop Color="#FFF59C4C" Offset="0.6"/>
+                    <GradientStop Color="#FFF1F109" Offset="0.8"/>
+                    <GradientStop Color="#FFFFCC33" Offset="1.0"/>
+
+                    <GradientStop Color="#FFF0F06E" Offset="0.047"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+
+
+
+        <Label x:Name="lblCompanyC" Content="北 京 智 敏 科 技 发 展 有 限 公 司" HorizontalAlignment="Left" Height="34" Margin="1102,7,0,0" Grid.Row="4" VerticalAlignment="Top" Width="317" FontSize="20" Foreground="#FF136EB9"/>
+        <Label x:Name="lblCompanyE" Content="Beijing Zhimin Science and Technology Development Co.,Ltd." HorizontalAlignment="Left" Height="26" Margin="1110,35,0,0" Grid.Row="4" VerticalAlignment="Top" Width="309" FontSize="10" Foreground="#FF136EB9"/>
+        <Label x:Name="lblDateTime" Content="2015/03/12 18:18:18" HorizontalAlignment="Left" Height="33" Margin="592,45,0,7"  
+               VerticalAlignment="Center" Width="238" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Background="{x:Null}" Foreground="#FF136EB9"/>
+        <Label Visibility ="Hidden" Content="网络状态" HorizontalAlignment="Left" Margin="45,19,0,0" Grid.Row="4" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="LightGray"  Height="32" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <Label Content="IP :" HorizontalAlignment="Left" Margin="52,19,0,0" Grid.Row="4" VerticalAlignment="Top" Width="40" Foreground="LightGray" Height="32" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <Image x:Name="imgIpStatus" HorizontalAlignment="Left" Margin="28,22,0,0" Grid.Row="4" VerticalAlignment="Top" Width="26"  Height="26" ToolTip="">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Resources/Orage3_S.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Label x:Name="ipShow" HorizontalAlignment="Left" Margin="88,20,0,0" Grid.Row="4" VerticalAlignment="Top" Width="110" Foreground="LightGray" Height="32" Content="192.168.1.1" VerticalContentAlignment="Center"/>
+        <ProgressBar x:Name="hdStatus" HorizontalAlignment="Left" Height="10" Margin="205,31,0,0" Grid.Row="4" VerticalAlignment="Top" Width="100" Foreground="Red"/>
+        <Label x:Name="hdTotal" Content="合计" HorizontalAlignment="Left" Margin="307,31,0,0" Grid.Row="4" VerticalAlignment="Top" FontSize="10" Foreground="LightGray"/>
+        <Label x:Name="hdFree" Content="剩余" HorizontalAlignment="Left" Margin="307,14,0,0" Grid.Row="4" VerticalAlignment="Top" FontSize="10" Foreground="LightGreen" RenderTransformOrigin="0.296,-0.105"/>
+    </Grid>
+</Window>

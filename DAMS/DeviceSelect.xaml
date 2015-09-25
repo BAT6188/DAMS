@@ -1,0 +1,13 @@
+﻿<Window x:Class="DAMS.DeviceSelect"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DeviceSelect" Height="300" Width="530"  WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" Background="#DD999999" >
+    <Grid>
+        <Canvas>
+            <Label Content="请选择设备类型：" Canvas.Left="39" Canvas.Top="48" Height="33" Width="177" FontSize="18" Foreground="#FF005893"/>
+            <Button x:Name="btnType01" Content="智 敏" Canvas.Left="70" Canvas.Top="120" Width="75" Height="70" FontSize="18" Foreground="#FF534F4F" Click="btnType01_Click"/>
+            <Button x:Name="btnType02" Content="警 翼" Canvas.Left="226" Canvas.Top="120" Width="75" Height="70" FontSize="18" Foreground="#FF534F4F" Click="btnType02_Click"/>
+            <Button x:Name="btnType03" Content="华德安" Canvas.Left="379" Canvas.Top="120" Width="75" Height="70" FontSize="18" Foreground="#FF534F4F" Click="btnType03_Click"/>
+        </Canvas>
+    </Grid>
+</Window>
