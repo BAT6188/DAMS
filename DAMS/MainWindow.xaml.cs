@@ -161,6 +161,26 @@ namespace DAMS
                 this.ipShow.Content = GetIPAddress();
                 StartStatusTimer();
 
+                //Login check  -->
+                LoginWindow ppWin = new LoginWindow();
+
+                if (ppWin.IsRegistered)
+                {
+                    //This S/W has been registered before.
+                }
+                else
+                {
+                    ppWin.Owner = this;
+                    Boolean blnOK = (Boolean)ppWin.ShowDialog();
+                    if (!blnOK)
+                    {
+                        //Shut application down.
+                        Application.Current.Shutdown();
+                        return;
+                    }
+                }
+                //Login check  -->
+
                 //When application is started, show monitor window.
                 OpenMonitorWindow();
              }catch(Exception exc){

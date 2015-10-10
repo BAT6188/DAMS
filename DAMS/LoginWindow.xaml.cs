@@ -85,7 +85,7 @@ namespace DAMS
             }
             else
             {
-                String key = tbxSerialNumber.Text;//zhiminKey.ReadValue("Key", "key");
+                String key = tbxUserName.Text;//zhiminKey.ReadValue("Key", "key");
                 //String value = zhiminColor.ReadValue("Color", "value");
 
                 //byte[] result = Encoding.Default.GetBytes(key);

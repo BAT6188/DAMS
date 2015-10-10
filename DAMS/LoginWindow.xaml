@@ -12,8 +12,9 @@
             </Button.Background>
         </Button>
         <Canvas HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="800">
-            <TextBox k:TouchScreenKeyboard.TouchScreenKeyboard="True" x:Name="tbxSerialNumber" Height="50" Width="623" TextWrapping="Wrap" Text="初次登录请输入产品序列号" Style="{DynamicResource TextBox-01}" 
-                     Canvas.Left="10" Canvas.Top="24" Background="#FFFF6600" SpellCheck.IsEnabled="True" FontSize="16" Foreground="White" Margin="0,0,0,0"/>
+            <TextBox k:TouchScreenKeyboard.TouchScreenKeyboard="True" x:Name="tbxUserName" Height="50" Width="442" TextWrapping="Wrap" Text="账户" Style="{DynamicResource TextBox-01}" 
+                     Canvas.Left="187" Canvas.Top="141" Background="#FF002EFF" SpellCheck.IsEnabled="True" FontSize="16" Foreground="White" Margin="0,0,0,0"/>
+            <PasswordBox k:TouchScreenKeyboard.TouchScreenKeyboard="True" x:Name="tbxSerialNumber" VerticalContentAlignment="Center" Canvas.Left="187" Canvas.Top="251" Width="442" Height="50" Background="#FF002EFF" FontSize="16" Foreground="White" Margin="0,0,0,0"/>
             <!--
             <TextBox k:TouchScreenKeyboard.TouchScreenKeyboard="True" x:Name="tbxID" Height="50" Width="334" TextWrapping="Wrap" Text="请输入管理员ID" Style="{DynamicResource TextBox-01}" 
             	Canvas.Left="230" Canvas.Top="132" Background="#FF005893" SpellCheck.IsEnabled="True" FontSize="20" Foreground="White" Margin="0,0,0,0" GotFocus="user_id_gotFocus"/>
@@ -22,23 +23,10 @@
             	Canvas.Left="230" Canvas.Top="224" Background="#FF005893" SpellCheck.IsEnabled="True" FontSize="20" Foreground="White" Margin="0,0,0,0" GotFocus="password_gotFocus"/>
             <TextBlock Height="30" Canvas.Left="252" TextWrapping="Wrap" Text="密码不正确!" Canvas.Top="274" Width="334" Foreground="#FFFF6600" FontSize="18" Visibility="Hidden"/>
             -->
-            <TextBlock x:Name="lblCopyRight1" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="733" FontSize="14" Foreground="#FFDDDDDD" Canvas.Top="160" Canvas.Left="34" 
-                       Text="北京智敏科技发展有限公司（以下简称智敏科技）视频采集管理系统软件，是中华人民共和国软件版权中心著作权认证" />
-            <TextBlock x:Name="lblCopyRight2" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="733" FontSize="14" Foreground="#FFDDDDDD" Canvas.Top="180" Canvas.Left="34" 
-                       Text="过的软件，软件著作权登记号是nnnnnnnn。" />
-            <TextBlock x:Name="lblCopyRight21" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="733" FontSize="14" Foreground="#FFDDDDDD" Canvas.Top="200" Canvas.Left="34" 
-                       Text="本系统所有的产品模板、系统源代码，均为原创作品，受国家计算机法、软件法保护。" />
-            <TextBlock x:Name="lblCopyRight3" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="733" FontSize="14" Foreground="#FFDDDDDD" Canvas.Top="220" Canvas.Left="34" 
-                       Text="未经智敏科技有限公司或商标权人书面许可，任何单位及个人不得以任何方式或理由对该软件系统的任何部分进行使用、" />
-            <TextBlock x:Name="lblCopyRight4" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="733" FontSize="14" Foreground="#FFDDDDDD" Canvas.Top="240" Canvas.Left="34" 
-                       Text="复制、修改、传播、抄录或与其它产品捆绑使用销售。凡侵犯本公司商标权的，我公司必依法追究其法律责任。" />
-            <TextBlock x:Name="lblCompanyC" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="297" FontSize="16" Foreground="#FFDDDDDD" Canvas.Top="302" Canvas.Left="453" 
-                       Text="北 京 智 敏 科 技 发 展 有 限 公 司" />
-            <TextBlock x:Name="lblCompanyE" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="309" FontSize="10" Foreground="#FFDDDDDD" Canvas.Top="329" Canvas.Left="454" 
-                       Text="Beijing Zhimin Science and Technology Development Co.,Ltd." />
 
-            <Button  x:Name="btnStart" Content="激   活" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="334" FontSize="20" Foreground="#FF9B9494" 
+            <Button  x:Name="btnStart" Content="登   录" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="334" FontSize="20" Foreground="#FF9B9494" 
                 Canvas.Left="230" Canvas.Top="396" Click="Button_Click"/>
+            
         </Canvas>
     </Grid>
 </Window>

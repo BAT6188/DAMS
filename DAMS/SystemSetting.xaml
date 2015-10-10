@@ -210,7 +210,7 @@
                 <!--CANVAS 综合管理设定-->
                 <Canvas x:Name ="cavSetting04" Height="620" Canvas.Left="426" Canvas.Top="70" Width="956"  Visibility="Hidden">
                     <!--添加画面项目 Begin-->
-                    <Label x:Name="lblCompanyC" Content="北 京 智 敏 科 技 发 展 有 限 公 司" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="317" FontSize="20" Foreground="#FFBBBBBB" Canvas.Top="320" Canvas.Left="304"/>
+                    <Label x:Name="lblCompanyC" Content=" 科 技 发 展 有 限 公 司" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="317" FontSize="20" Foreground="#FFBBBBBB" Canvas.Top="320" Canvas.Left="304"/>
                     <Label x:Name="lblCompanyE" Content="Beijing Zhimin Science and Technology Development Co.,Ltd." HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="309" FontSize="10" Foreground="#FFBBBBBB" Canvas.Top="350" Canvas.Left="310"/>
 <!--                <Label x:Name="lblCopyRight1" Content="北京智敏科技发展有限公司（以下简称智敏科技）视频采集管理系统软件，是中华人民共和国软件版权中心著作权认证过的软件，软件著作权登记号是nnnnnnnn。" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="878" FontSize="12" Foreground="Black" Canvas.Top="460" Canvas.Left="51"/>
                     <Label x:Name="lblCopyRight2" Content="本系统所有的产品模板、系统源码，均为原创作品，受国家计算机法、软件法保护。" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="878" FontSize="12" Foreground="Black" Canvas.Top="480" Canvas.Left="51"/>
@@ -219,13 +219,13 @@
 -->
 
                     <TextBlock x:Name="lblCopyRight1" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="733" FontSize="14" Foreground="#FFAAAAAA" Canvas.Top="160" Canvas.Left="80" 
-                       Text="北京智敏科技发展有限公司（以下简称智敏科技）视频采集管理系统软件，是中华人民共和国软件版权中心著作权认证" />
+                       Text="科技发展有限公司（以下简称）视频采集管理系统软件，是中华人民共和国软件版权中心著作权认证" />
                     <TextBlock x:Name="lblCopyRight2" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="733" FontSize="14" Foreground="#FFAAAAAA" Canvas.Top="180" Canvas.Left="80" 
                        Text="过的软件，软件著作权登记号是nnnnnnnn。" />
                     <TextBlock x:Name="lblCopyRight21" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="733" FontSize="14" Foreground="#FFAAAAAA" Canvas.Top="200" Canvas.Left="80" 
                        Text="本系统所有的产品模板、系统源代码，均为原创作品，受国家计算机法、软件法保护。" />
                     <TextBlock x:Name="lblCopyRight3" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="733" FontSize="14" Foreground="#FFAAAAAA" Canvas.Top="220" Canvas.Left="80" 
-                       Text="未经智敏科技有限公司或商标权人书面许可，任何单位及个人不得以任何方式或理由对该软件系统的任何部分进行使用、" />
+                       Text="未经有限公司或商标权人书面许可，任何单位及个人不得以任何方式或理由对该软件系统的任何部分进行使用、" />
                     <TextBlock x:Name="lblCopyRight4" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="733" FontSize="14" Foreground="#FFAAAAAA" Canvas.Top="240" Canvas.Left="80" 
                        Text="复制、修改、传播、抄录或与其它产品捆绑使用销售。凡侵犯本公司商标权的，我公司必依法追究其法律责任。" />
 

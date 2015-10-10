@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\执法系统\执法记录仪项目资料\参考程序\DAMS\DAMS\obj\Debug\
+F:\DAMS\DAMS\DAMS\obj\Debug\
 DAMS
 none
 false
 DEBUG;TRACE
-E:\执法系统\执法记录仪项目资料\参考程序\DAMS\DAMS\App.xaml
+F:\DAMS\DAMS\DAMS\App.xaml
 11-338184779
 
 40-112873515
-201970959237
+20-1247291477
 CategoUploadWindow.xaml;DeviceSelect.xaml;LoginWindow.xaml;MainControl\MonitorUnitCtrl.xaml;MainWindow.xaml;MngPwdConfirm.xaml;MonitorWindow.xaml;Registration.xaml;SystemSetting.xaml;Themes\Generic.xaml;UserControls\UsrCtrlWaiting.xaml;
 
 False
